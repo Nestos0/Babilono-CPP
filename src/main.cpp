@@ -1,11 +1,12 @@
-#include <iostream>
-
+#include <print>
+using namespace std;
+ 
 int main() {
-  std::cout << "Hello, C++\n";
-
-  for (int i = 0 ;i < 1e2;i++) {
-    std::cout << i;
-  }
-
-  std::cout << "\n";
+    int i = 1, j = 2;
+    unsigned k;
+    println("(1) i = {}, j = {}, k = {}", i, j, k);
+    i = j;
+    j = 3;
+    k = -1;
+    println("(2) i = {}, j = {}, k = {}", i, j, k);
 }
