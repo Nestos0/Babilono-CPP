@@ -3,7 +3,7 @@ CMAKE := cmake
 GENERATOR := Ninja
 
 all:
-	$(CMAKE) -S . -B $(BUILD_DIR)
+	$(CMAKE) -S . -B $(BUILD_DIR) -DCMAKE_EXPORT_COMPILE_COMMANDS=ON
 	$(CMAKE) --build $(BUILD_DIR)
 
 run: all
